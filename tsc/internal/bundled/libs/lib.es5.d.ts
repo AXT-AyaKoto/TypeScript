@@ -2152,7 +2152,7 @@ interface Int8ArrayConstructor {
      * @param mapfn A mapping function to call on every element of the array.
      * @param thisArg Value of 'this' used to invoke the mapfn.
      */
-    from<T>(arrayLike: ArrayLike<T>, mapfn: (v: T, k: number) => number, thisArg?: any): Int8Array<ArrayBuffer>;
+    from<T>(arrayLike: ArrayLike<T>, mapfn: (element: T, index: number) => number, thisArg?: any): Int8Array<ArrayBuffer>;
 }
 declare var Int8Array: Int8ArrayConstructor;
 
@@ -2434,7 +2434,7 @@ interface Uint8ArrayConstructor {
      * @param mapfn A mapping function to call on every element of the array.
      * @param thisArg Value of 'this' used to invoke the mapfn.
      */
-    from<T>(arrayLike: ArrayLike<T>, mapfn: (v: T, k: number) => number, thisArg?: any): Uint8Array<ArrayBuffer>;
+    from<T>(arrayLike: ArrayLike<T>, mapfn: (element: T, index: number) => number, thisArg?: any): Uint8Array<ArrayBuffer>;
 }
 declare var Uint8Array: Uint8ArrayConstructor;
 
@@ -2716,7 +2716,7 @@ interface Uint8ClampedArrayConstructor {
      * @param mapfn A mapping function to call on every element of the array.
      * @param thisArg Value of 'this' used to invoke the mapfn.
      */
-    from<T>(arrayLike: ArrayLike<T>, mapfn: (v: T, k: number) => number, thisArg?: any): Uint8ClampedArray<ArrayBuffer>;
+    from<T>(arrayLike: ArrayLike<T>, mapfn: (element: T, index: number) => number, thisArg?: any): Uint8ClampedArray<ArrayBuffer>;
 }
 declare var Uint8ClampedArray: Uint8ClampedArrayConstructor;
 
@@ -2997,7 +2997,7 @@ interface Int16ArrayConstructor {
      * @param mapfn A mapping function to call on every element of the array.
      * @param thisArg Value of 'this' used to invoke the mapfn.
      */
-    from<T>(arrayLike: ArrayLike<T>, mapfn: (v: T, k: number) => number, thisArg?: any): Int16Array<ArrayBuffer>;
+    from<T>(arrayLike: ArrayLike<T>, mapfn: (element: T, index: number) => number, thisArg?: any): Int16Array<ArrayBuffer>;
 }
 declare var Int16Array: Int16ArrayConstructor;
 
@@ -3279,7 +3279,7 @@ interface Uint16ArrayConstructor {
      * @param mapfn A mapping function to call on every element of the array.
      * @param thisArg Value of 'this' used to invoke the mapfn.
      */
-    from<T>(arrayLike: ArrayLike<T>, mapfn: (v: T, k: number) => number, thisArg?: any): Uint16Array<ArrayBuffer>;
+    from<T>(arrayLike: ArrayLike<T>, mapfn: (element: T, index: number) => number, thisArg?: any): Uint16Array<ArrayBuffer>;
 }
 declare var Uint16Array: Uint16ArrayConstructor;
 /**
@@ -3560,7 +3560,7 @@ interface Int32ArrayConstructor {
      * @param mapfn A mapping function to call on every element of the array.
      * @param thisArg Value of 'this' used to invoke the mapfn.
      */
-    from<T>(arrayLike: ArrayLike<T>, mapfn: (v: T, k: number) => number, thisArg?: any): Int32Array<ArrayBuffer>;
+    from<T>(arrayLike: ArrayLike<T>, mapfn: (element: T, index: number) => number, thisArg?: any): Int32Array<ArrayBuffer>;
 }
 declare var Int32Array: Int32ArrayConstructor;
 
@@ -3841,7 +3841,7 @@ interface Uint32ArrayConstructor {
      * @param mapfn A mapping function to call on every element of the array.
      * @param thisArg Value of 'this' used to invoke the mapfn.
      */
-    from<T>(arrayLike: ArrayLike<T>, mapfn: (v: T, k: number) => number, thisArg?: any): Uint32Array<ArrayBuffer>;
+    from<T>(arrayLike: ArrayLike<T>, mapfn: (element: T, index: number) => number, thisArg?: any): Uint32Array<ArrayBuffer>;
 }
 declare var Uint32Array: Uint32ArrayConstructor;
 
@@ -4123,7 +4123,7 @@ interface Float32ArrayConstructor {
      * @param mapfn A mapping function to call on every element of the array.
      * @param thisArg Value of 'this' used to invoke the mapfn.
      */
-    from<T>(arrayLike: ArrayLike<T>, mapfn: (v: T, k: number) => number, thisArg?: any): Float32Array<ArrayBuffer>;
+    from<T>(arrayLike: ArrayLike<T>, mapfn: (element: T, index: number) => number, thisArg?: any): Float32Array<ArrayBuffer>;
 }
 declare var Float32Array: Float32ArrayConstructor;
 
@@ -4405,7 +4405,7 @@ interface Float64ArrayConstructor {
      * @param mapfn A mapping function to call on every element of the array.
      * @param thisArg Value of 'this' used to invoke the mapfn.
      */
-    from<T>(arrayLike: ArrayLike<T>, mapfn: (v: T, k: number) => number, thisArg?: any): Float64Array<ArrayBuffer>;
+    from<T>(arrayLike: ArrayLike<T>, mapfn: (element: T, index: number) => number, thisArg?: any): Float64Array<ArrayBuffer>;
 }
 declare var Float64Array: Float64ArrayConstructor;
 

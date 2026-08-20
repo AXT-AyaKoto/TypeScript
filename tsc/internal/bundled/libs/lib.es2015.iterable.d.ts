@@ -104,7 +104,7 @@ interface ArrayConstructor {
      * @param mapfn A mapping function to call on every element of the array.
      * @param thisArg Value of 'this' used to invoke the mapfn.
      */
-    from<T, U>(iterable: Iterable<T> | ArrayLike<T>, mapfn: (v: T, k: number) => U, thisArg?: any): U[];
+    from<T, U>(iterable: Iterable<T> | ArrayLike<T>, mapfn: (element: T, index: number) => U, thisArg?: any): U[];
 }
 
 interface ReadonlyArray<T> {
@@ -304,7 +304,7 @@ interface Int8ArrayConstructor {
      * @param mapfn A mapping function to call on every element of the array.
      * @param thisArg Value of 'this' used to invoke the mapfn.
      */
-    from<T>(elements: Iterable<T>, mapfn?: (v: T, k: number) => number, thisArg?: any): Int8Array<ArrayBuffer>;
+    from<T>(elements: Iterable<T>, mapfn?: (element: T, index: number) => number, thisArg?: any): Int8Array<ArrayBuffer>;
 }
 
 interface Uint8Array<TArrayBuffer extends ArrayBufferLike> {
@@ -341,7 +341,7 @@ interface Uint8ArrayConstructor {
      * @param mapfn A mapping function to call on every element of the array.
      * @param thisArg Value of 'this' used to invoke the mapfn.
      */
-    from<T>(elements: Iterable<T>, mapfn?: (v: T, k: number) => number, thisArg?: any): Uint8Array<ArrayBuffer>;
+    from<T>(elements: Iterable<T>, mapfn?: (element: T, index: number) => number, thisArg?: any): Uint8Array<ArrayBuffer>;
 }
 
 interface Uint8ClampedArray<TArrayBuffer extends ArrayBufferLike> {
@@ -378,7 +378,7 @@ interface Uint8ClampedArrayConstructor {
      * @param mapfn A mapping function to call on every element of the array.
      * @param thisArg Value of 'this' used to invoke the mapfn.
      */
-    from<T>(elements: Iterable<T>, mapfn?: (v: T, k: number) => number, thisArg?: any): Uint8ClampedArray<ArrayBuffer>;
+    from<T>(elements: Iterable<T>, mapfn?: (element: T, index: number) => number, thisArg?: any): Uint8ClampedArray<ArrayBuffer>;
 }
 
 interface Int16Array<TArrayBuffer extends ArrayBufferLike> {
@@ -414,7 +414,7 @@ interface Int16ArrayConstructor {
      * @param mapfn A mapping function to call on every element of the array.
      * @param thisArg Value of 'this' used to invoke the mapfn.
      */
-    from<T>(elements: Iterable<T>, mapfn?: (v: T, k: number) => number, thisArg?: any): Int16Array<ArrayBuffer>;
+    from<T>(elements: Iterable<T>, mapfn?: (element: T, index: number) => number, thisArg?: any): Int16Array<ArrayBuffer>;
 }
 
 interface Uint16Array<TArrayBuffer extends ArrayBufferLike> {
@@ -451,7 +451,7 @@ interface Uint16ArrayConstructor {
      * @param mapfn A mapping function to call on every element of the array.
      * @param thisArg Value of 'this' used to invoke the mapfn.
      */
-    from<T>(elements: Iterable<T>, mapfn?: (v: T, k: number) => number, thisArg?: any): Uint16Array<ArrayBuffer>;
+    from<T>(elements: Iterable<T>, mapfn?: (element: T, index: number) => number, thisArg?: any): Uint16Array<ArrayBuffer>;
 }
 
 interface Int32Array<TArrayBuffer extends ArrayBufferLike> {
@@ -488,7 +488,7 @@ interface Int32ArrayConstructor {
      * @param mapfn A mapping function to call on every element of the array.
      * @param thisArg Value of 'this' used to invoke the mapfn.
      */
-    from<T>(elements: Iterable<T>, mapfn?: (v: T, k: number) => number, thisArg?: any): Int32Array<ArrayBuffer>;
+    from<T>(elements: Iterable<T>, mapfn?: (element: T, index: number) => number, thisArg?: any): Int32Array<ArrayBuffer>;
 }
 
 interface Uint32Array<TArrayBuffer extends ArrayBufferLike> {
@@ -525,7 +525,7 @@ interface Uint32ArrayConstructor {
      * @param mapfn A mapping function to call on every element of the array.
      * @param thisArg Value of 'this' used to invoke the mapfn.
      */
-    from<T>(elements: Iterable<T>, mapfn?: (v: T, k: number) => number, thisArg?: any): Uint32Array<ArrayBuffer>;
+    from<T>(elements: Iterable<T>, mapfn?: (element: T, index: number) => number, thisArg?: any): Uint32Array<ArrayBuffer>;
 }
 
 interface Float32Array<TArrayBuffer extends ArrayBufferLike> {
@@ -562,7 +562,7 @@ interface Float32ArrayConstructor {
      * @param mapfn A mapping function to call on every element of the array.
      * @param thisArg Value of 'this' used to invoke the mapfn.
      */
-    from<T>(elements: Iterable<T>, mapfn?: (v: T, k: number) => number, thisArg?: any): Float32Array<ArrayBuffer>;
+    from<T>(elements: Iterable<T>, mapfn?: (element: T, index: number) => number, thisArg?: any): Float32Array<ArrayBuffer>;
 }
 
 interface Float64Array<TArrayBuffer extends ArrayBufferLike> {
@@ -599,5 +599,5 @@ interface Float64ArrayConstructor {
      * @param mapfn A mapping function to call on every element of the array.
      * @param thisArg Value of 'this' used to invoke the mapfn.
      */
-    from<T>(elements: Iterable<T>, mapfn?: (v: T, k: number) => number, thisArg?: any): Float64Array<ArrayBuffer>;
+    from<T>(elements: Iterable<T>, mapfn?: (element: T, index: number) => number, thisArg?: any): Float64Array<ArrayBuffer>;
 }

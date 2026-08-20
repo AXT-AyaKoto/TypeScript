@@ -382,7 +382,7 @@ interface Float16ArrayConstructor {
      * @param mapfn A mapping function to call on every element of the array.
      * @param thisArg Value of 'this' used to invoke the mapfn.
      */
-    from<T>(arrayLike: ArrayLike<T>, mapfn: (v: T, k: number) => number, thisArg?: any): Float16Array<ArrayBuffer>;
+    from<T>(arrayLike: ArrayLike<T>, mapfn: (element: T, index: number) => number, thisArg?: any): Float16Array<ArrayBuffer>;
 
     /**
      * Creates an array from an array-like or iterable object.
@@ -396,7 +396,7 @@ interface Float16ArrayConstructor {
      * @param mapfn A mapping function to call on every element of the array.
      * @param thisArg Value of 'this' used to invoke the mapfn.
      */
-    from<T>(elements: Iterable<T>, mapfn?: (v: T, k: number) => number, thisArg?: any): Float16Array<ArrayBuffer>;
+    from<T>(elements: Iterable<T>, mapfn?: (element: T, index: number) => number, thisArg?: any): Float16Array<ArrayBuffer>;
 }
 declare var Float16Array: Float16ArrayConstructor;
 

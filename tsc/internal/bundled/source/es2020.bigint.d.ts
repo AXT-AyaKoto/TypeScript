@@ -397,7 +397,7 @@ interface BigInt64ArrayConstructor {
      * @param mapfn A mapping function to call on every element of the array.
      * @param thisArg Value of 'this' used to invoke the mapfn.
      */
-    from<U>(arrayLike: ArrayLike<U>, mapfn: (v: U, k: number) => bigint, thisArg?: any): BigInt64Array<ArrayBuffer>;
+    from<U>(arrayLike: ArrayLike<U>, mapfn: (element: U, index: number) => bigint, thisArg?: any): BigInt64Array<ArrayBuffer>;
 
     /**
      * Creates an array from an array-like or iterable object.
@@ -411,7 +411,7 @@ interface BigInt64ArrayConstructor {
      * @param mapfn A mapping function to call on every element of the array.
      * @param thisArg Value of 'this' used to invoke the mapfn.
      */
-    from<T>(elements: Iterable<T>, mapfn?: (v: T, k: number) => bigint, thisArg?: any): BigInt64Array<ArrayBuffer>;
+    from<T>(elements: Iterable<T>, mapfn?: (element: T, index: number) => bigint, thisArg?: any): BigInt64Array<ArrayBuffer>;
 }
 declare var BigInt64Array: BigInt64ArrayConstructor;
 
@@ -688,7 +688,7 @@ interface BigUint64ArrayConstructor {
      * @param mapfn A mapping function to call on every element of the array.
      * @param thisArg Value of 'this' used to invoke the mapfn.
      */
-    from<U>(arrayLike: ArrayLike<U>, mapfn: (v: U, k: number) => bigint, thisArg?: any): BigUint64Array<ArrayBuffer>;
+    from<U>(arrayLike: ArrayLike<U>, mapfn: (element: U, index: number) => bigint, thisArg?: any): BigUint64Array<ArrayBuffer>;
 
     /**
      * Creates an array from an array-like or iterable object.
@@ -702,7 +702,7 @@ interface BigUint64ArrayConstructor {
      * @param mapfn A mapping function to call on every element of the array.
      * @param thisArg Value of 'this' used to invoke the mapfn.
      */
-    from<T>(elements: Iterable<T>, mapfn?: (v: T, k: number) => bigint, thisArg?: any): BigUint64Array<ArrayBuffer>;
+    from<T>(elements: Iterable<T>, mapfn?: (element: T, index: number) => bigint, thisArg?: any): BigUint64Array<ArrayBuffer>;
 }
 declare var BigUint64Array: BigUint64ArrayConstructor;
 
